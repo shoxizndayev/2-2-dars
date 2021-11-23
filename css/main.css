@@ -91,7 +91,7 @@ img {
 .great .container {
     width: 1280px;
     height: 600px;
-    background-image: url(../img/Bitmap.jpg);
+    background-image: url(../img/Bitmap-cofe.png);
     background-repeat: no-repeat;
     background-size: 100%;
     border-radius: 10px;
@@ -137,6 +137,10 @@ img {
 }
 
 /* ====our collection==== */
+
+.our-section {
+    margin-bottom: 200px;
+}
 
 .our-list {
     position: relative;
@@ -215,8 +219,232 @@ img {
 
 /* ====Choose==== */
 
+.choose .container {
+    position: relative;
+    margin-bottom: 400px;
+}
+
 .choose-top {
+    width: 1280px;
+    height: 577px;
+    padding: 100px 370px;
     background-color: rgba(44, 52, 62, 1);
     border-radius: 10px;
-    
+    z-index: 5;
+}
+
+.choose-top-heading {
+    text-align: center;
+    font-size: 40px;
+    font-family: "Fraunces";
+    font-weight: 900;
+    color: rgba(254, 252, 247, 1);
+    margin-bottom: 32px;
+}
+
+.choose-top-paragraph {
+    text-align: center;
+    font-weight: 400;
+    font-size: 16px;
+    color: rgba(254, 252, 247, 1);
+}
+
+.choose-list {
+    position: absolute;
+    top: 70%;
+    left: 85px;
+    display: flex;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    z-index: 10;
+}
+
+.choose-item {
+    margin-left: 30px;
+    padding: 48px;
+    background-color: rgba(14, 135, 132, 1);
+    border-radius: 8px;
+    width: 350px;
+}
+
+.choose-link {
+    text-align: center;
+    color: rgba(254, 252, 247, 1);
+    text-decoration: none;
+}
+
+.choose-item-heading {
+    font-family: "Fraunces";
+    font-weight: 900;
+    font-size: 24px;
+    margin-bottom: 24px;
+}
+
+.choose-item-paragraph {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.best::before {
+    width: 72px;
+    height: 72px;
+    display: block;
+	margin: 0 auto;
+	background-image: url(../img/coffee-bean.png);
+	background-repeat: no-repeat;
+	content: '';
+}
+
+.box::before {
+    width: 72px;
+    height: 72px;
+    display: block;
+	margin: 0 auto;
+	background-image: url(../img/Combined-box.png);
+	background-repeat: no-repeat;
+	content: '';
+}
+
+.car::before {
+    width: 72px;
+    height: 50px;
+    display: block;
+	margin: 0 auto;
+	background-image: url(../img/Combined-car.png);
+	background-repeat: no-repeat;
+	content: '';
+}
+
+/* ====works==== */
+
+.works .container {
+    width: 1045px;
+    margin: 0 auto;
+    margin-bottom: 200px;
+}
+
+.works-heading {
+    font-family: "Fraunces";
+    font-size: 24px;
+    font-weight: 900;
+    color: #83888F;
+    margin-bottom: 80px;
+}
+
+.oval-line {
+    display: flex;
+    align-items: center;
+    width: 800px;
+    margin-bottom: 65px;
+}
+
+.oval {
+    width: 31px;
+    height: 31px;
+    background-color: #FEFCF7;
+    border: 2px solid #0E8784;
+    border-radius: 50%;
+}
+
+.line {
+    width: 360px;
+    height: 1px;
+    background-color: #FDD6BA;
+}
+
+.works-list {
+    width: 1045px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    margin-bottom: 64px;
+}
+
+.works-item {
+    width: 285px;
+}
+
+.list-number {
+    font-family: "Fraunces";
+    font-weight: 900;
+    font-size: 72px;
+    color: rgba(253, 214, 186, 1);
+    margin-bottom: 38px;
+}
+
+.works-list-heading {
+    width: 255px;
+    font-family: "Fraunces";
+    font-weight: 900;
+    font-size: 32px;
+    color: rgba(51, 61, 75, 1);
+    margin-bottom: 43px;
+}
+
+.works-list-paragraph {
+    width: 285px;
+    font-size: 16px;
+    font-weight: 400;
+    color: rgba(51, 61, 75, 1);
+}
+
+/* ====Footer==== */
+
+.footer .container {
+    display: flex;
+    justify-content: space-between;
+    width: 1280px;
+    margin: 0 auto;
+    padding: 45px 85px;
+    background-color: rgba(44, 52, 62, 1);
+}
+
+.footer-left {
+    display: flex;
+    justify-content: space-between;
+    width: 622px;
+}
+
+.icon-list {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.icon-item + .icon-item {
+    margin-left: 25px;
+}
+
+.facebook::before {
+    width: 24px;
+    height: 24px;
+    display: block;
+	margin: 0 auto;
+	background-image: url(../img/Path.svg);
+	background-repeat: no-repeat;
+	content: '';
+}
+
+.twitter::before {
+    width: 24px;
+    height: 20px;
+    display: block;
+	margin: 0 auto;
+	background-image: url(../img/Path-1.svg);
+	background-repeat: no-repeat;
+	content: '';
+}
+
+.instagram::before {
+    width: 24px;
+    height: 24px;
+    display: block;
+	margin: 0 auto;
+	background-image: url(../img/Shape.svg);
+	background-repeat: no-repeat;
+	content: '';
 }

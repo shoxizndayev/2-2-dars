@@ -1,0 +1,230 @@
+/* barlow-regular - latin */
+@font-face {
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 400;
+    src: local(''),
+         url('../fonts/barlow-v5-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/barlow-v5-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+
+  /* barlow-700 - latin */
+@font-face {
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 700;
+    src: local(''),
+         url('../fonts/barlow-v5-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/barlow-v5-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+
+/* fraunces-900 - latin */
+@font-face {
+    font-family: 'Fraunces';
+    font-style: normal;
+    font-weight: 900;
+    src: local(''),
+         url('../fonts/fraunces-v10-latin-900.woff2') format('woff2'),
+         url('../fonts/fraunces-v10-latin-900.woff') format('woff');
+  }
+
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	line-height: 1.5;
+    font-family: "Barlow", "Arial", sans-serif;
+}
+
+.container {
+	width: 1320px;
+	margin: 0 auto;
+	padding: 0 20px;
+}
+
+img {
+	vertical-align: middle;
+	object-fit: cover;
+}
+
+/* ====Header==== */
+
+.header .container {
+    margin-top: 43px;
+    margin-bottom: 43px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-list {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.header-item {
+    margin-left: 33px;
+}
+
+.header-link {
+    text-decoration: none;
+    color: rgba(131, 136, 143, 1);
+    font-size: 12px;
+    font-weight: 700;
+    transition: color 0.2s ease;
+}
+
+.header-link:hover {
+    color: rgba(51, 61, 75, 1);
+} 
+
+
+/* ====section==== */
+
+.hero .container {
+    width: 1280px;
+    height: 400px;
+    background-image: url(../img/2-page/Bitmap.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    border-radius: 10px;
+    padding: 85px 137px;
+    margin-bottom: 170px;
+}
+
+.hero-heading {
+    font-family: "Fraunces";
+    font-size: 40px;
+    font-weight: 900;
+    color: rgba(254, 252, 247, 1);
+    margin: 0;
+    margin-bottom: 24px;
+}
+
+.hero-paragraph {
+    font-size: 16px;
+    font-weight: 400;
+    width: 445px;
+    color: rgba(254, 252, 247, 1);
+}
+
+/* ====our==== */
+
+.our .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1110px;
+    margin-bottom: 170px;
+}
+
+.our-text {
+    width: 540px;
+}
+
+.our-heading {
+    font-family: "Fraunces";
+    margin-bottom: 32px;
+    font-weight: 900;
+    font-size: 40px;
+    color: rgba(51, 61, 75, 1);
+}
+
+.our-paragraph {
+    font-weight: 400;
+    font-size: 16px;
+    color: #333D4B;
+    opacity: 0.8;
+}
+
+/* ====quality==== */
+
+.quality .container {
+    width: 1280px;
+    background-color: rgba(44, 52, 62, 1);
+    color: rgba(254, 252, 247, 1);
+    border-radius: 10px;
+    padding: 85px;
+    padding-bottom: 176px;
+    margin-bottom: 80px;
+}
+
+.quality-heading {
+    font-family: "Fraunces";
+    margin-bottom: 32px;
+    font-weight: 900;
+    font-size: 40px;
+    color: rgba(254, 252, 247, 1);
+}
+
+.quality-paragraph {
+    width: 540px;
+    color: rgba(254, 252, 247, 1);
+    opacity: 0.8;
+    font-size: 16px;
+}
+/* ====footer==== */
+
+.footer .container {
+    display: flex;
+    justify-content: space-between;
+    width: 1280px;
+    margin: 0 auto;
+    padding: 45px 85px;
+    background-color: rgba(44, 52, 62, 1);
+}
+
+.footer-left {
+    display: flex;
+    justify-content: space-between;
+    width: 622px;
+}
+
+.icon-list {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.icon-item + .icon-item {
+    margin-left: 25px;
+}
+
+.facebook::before {
+    width: 24px;
+    height: 24px;
+    display: block;
+	margin: 0 auto;
+	background-image: url(../img/Path.svg);
+	background-repeat: no-repeat;
+	content: '';
+}
+
+.twitter::before {
+    width: 24px;
+    height: 20px;
+    display: block;
+	margin: 0 auto;
+	background-image: url(../img/Path-1.svg);
+	background-repeat: no-repeat;
+	content: '';
+}
+
+.instagram::before {
+    width: 24px;
+    height: 24px;
+    display: block;
+	margin: 0 auto;
+	background-image: url(../img/Shape.svg);
+	background-repeat: no-repeat;
+	content: '';
+}
