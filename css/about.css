@@ -123,7 +123,7 @@ img {
     justify-content: space-between;
     align-items: center;
     width: 1110px;
-    margin-bottom: 170px;
+    margin-bottom: 300px;
 }
 
 .our-text {
@@ -148,13 +148,14 @@ img {
 /* ====quality==== */
 
 .quality .container {
+    position: relative;
     width: 1280px;
     background-color: rgba(44, 52, 62, 1);
     color: rgba(254, 252, 247, 1);
     border-radius: 10px;
     padding: 85px;
     padding-bottom: 176px;
-    margin-bottom: 80px;
+    margin-bottom: 170px;
 }
 
 .quality-heading {
@@ -165,12 +166,108 @@ img {
     color: rgba(254, 252, 247, 1);
 }
 
+.quality-heading::before {
+    position: absolute;
+    width: 445px;
+    height: 474px;
+    bottom: 30%;
+    right: 10%;
+    background-image: url(../img/2-page/Bitmap-1.jpg);
+    background-repeat: no-repeat;
+    content: '';
+    border-radius: 8px;
+}
+
 .quality-paragraph {
     width: 540px;
     color: rgba(254, 252, 247, 1);
     opacity: 0.8;
     font-size: 16px;
 }
+
+
+/* ====Our headquarters==== */
+
+.location .container {
+    width: 1045px;
+    margin-bottom: 170px;
+}
+
+.location-heading {
+    font-family: "Fraunces";
+    font-weight: 900;
+    font-size: 24px;
+    color: #83888F;
+    margin-bottom: 72px;
+}
+
+.location-list {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.location-item {
+    width: 285px;
+}
+
+.location-item + .location-item {
+    margin-left: 95px;
+}
+
+.location-link {
+    text-decoration: none;
+}
+
+.state-heading {
+    font-family: "Fraunces";
+    font-weight: 900;
+    font-size: 32px;
+    color: #333D4B;
+    margin-bottom: 24px;
+}
+
+.state-list {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+.state-item {
+    font-size: 16px;
+    line-height: 26px;
+    color: #333D4B;
+}
+
+.united::before {
+    width: 40px;
+    height: 50px;
+    display: block;
+	background-image: url(../img/2-page/United-Kingdom.png);
+	background-repeat: no-repeat;
+	content: '';
+}
+
+.canada::before {
+    width: 52px;
+    height: 50px;
+    display: block;
+	background-image: url(../img/2-page/Canada.png);
+	background-repeat: no-repeat;
+	content: '';
+}
+
+.australia::before {
+    width: 49px;
+    height: 44px;
+    display: block;
+	background-image: url(../img/2-page/Canada.png);
+	background-repeat: no-repeat;
+	content: '';
+}
+
+
 /* ====footer==== */
 
 .footer .container {
@@ -186,6 +283,10 @@ img {
     display: flex;
     justify-content: space-between;
     width: 622px;
+}
+
+.footer-nav:hover {
+    color: rgba(254, 252, 247, 1);
 }
 
 .icon-list {
